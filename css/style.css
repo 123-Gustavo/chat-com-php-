@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(233, 233, 233);
+}
+
+/* Div do formulario do login */
+div.formulario{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 25%;
+    padding: 5px;
+    background-color: rgb(212, 212, 212);
+    box-shadow: 1px 1px 5px rgb(75, 75, 75);
+    border-radius: 10px;
+}
+
+/* Titulo do formulario de login */
+div.formulario h2{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20pt;
+    padding: 10px;
+}
+
+/* Manipulando o formulario de login */
+div.formulario form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 10px auto;
+    padding: 5px;
+    width: 75%;
+    height: 75%;
+}
+
+/* Manipulando os campos de login em geral */
+div.formulario form input{
+    width: 100%;
+    height: 25%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+/* Manipulando campos em especifico */
+div.formulario form input[type="email"],
+div.formulario form input[type="password"]{
+    background-color: rgb(228, 228, 228);
+    outline: 0;
+    border: 1px solid rgb(161, 161, 161);
+}
+
+/* Controlando o botão de enviar*/
+div.formulario form input[type="submit"]{
+    border: 1px solid rgb(161, 161, 161);
+    outline: 0;
+    background-color: rgb(202, 202, 202);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+div.formulario form input[type="submit"]:hover{
+    background-color: rgb(208, 208, 208);
+}
+
+/* Div do formulario pra mandar mensagem */
+div.formularioMsg{
+    position: fixed;
+    top: 94%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 5%;
+    border-top: 1px solid rgb(110, 110, 110);
+    padding-top: 5px;
+}
+
+/* Formulario para mandar a mensagem */
+div.formularioMsg form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+}
+
+/* Campo para enviar a mensagem */
+div.formularioMsg form textarea{
+    width: 90%;
+    background-color: rgb(228, 228, 228);
+    outline: 0;
+    border: 1px solid rgb(161, 161, 161);
+    box-shadow: 1px 1px 7px rgba(92, 92, 92, 0.76);
+    height: 98%;
+    margin-left: 10px;
+    margin-right: 2px;
+    padding-left: 10px;
+    border-radius: 30px;
+}
+
+/* Controlando o campo de enviar */
+div.formularioMsg form input[type="submit"]{
+    width: 10%;
+    background-color: rgb(228, 228, 228);
+    outline: 0;
+    border: 1px solid rgb(146, 146, 146);
+    box-shadow: 1px 1px 7px rgba(92, 92, 92, 0.76);
+    height: 98%;
+    margin-right: 10px;
+    margin-left: 2px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 13pt;
+    transition: 0.3s;
+}
+
+div.formularioMsg form input[type="submit"]:hover{
+    background-color: rgb(209, 209, 209);
+    border: 1px solid rgb(124, 124, 124);
+}
+
+/* Box onde as mensagem irão aparecer */
+div.mensagens{
+    position: absolute;
+    width: 100%;
+    height: 93%;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+/* Manipulando a div da mensagem */
+div.mensagens div.msgsingle{
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Manipulando o nome do usuario */ 
+div.mensagens div.msgsingle h3{
+    font-size: 13pt;
+    margin-bottom: 2px;
+}
+
+/* Manipulando a data */
+div.mensagens div.msgsingle h3 span{
+    font-size: 10pt;
+    font-weight: normal;
+    color: rgb(83, 83, 83);
+}
+
+/* Manipulando a mensagem*/
+div.mensagens div.msgsingle p {
+    margin-top: 5px;
+}
+
